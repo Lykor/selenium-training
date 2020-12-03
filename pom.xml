@@ -7,6 +7,9 @@
     <groupId>org.example</groupId>
     <artifactId>selenium-training</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <cucumber.version>6.8.1</cucumber.version>
+    </properties>
     <build>
         <plugins>
             <plugin>
@@ -34,6 +37,17 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java8</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
         </dependency>
     </dependencies>
 
